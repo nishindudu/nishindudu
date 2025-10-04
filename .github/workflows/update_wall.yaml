@@ -33,13 +33,15 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
         run: python write_visitors_file.py
       
-      - name: Update Visitor Wall
+      - id: update_wall
+        name: Update Visitor Wall
         env:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_USER: ${{ github.event.issue.user.login }}
         run: python generate.py
       
       - name: Commit and Push Changes
+        if: ${{ steps.update_wall.outcome == 'success' }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
