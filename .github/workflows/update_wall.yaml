@@ -1,0 +1,36 @@
+name : Update Visitor Wall
+
+on :
+  issues:
+    types : [ opened ]
+
+jobs:
+  update_wall:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'Visitor Wall--')
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12.1'
+      
+      - name: Install Dependencies
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install --upgrade pip
+          .venv/bin/pip install -r requirements.txt
+      
+      - name: Update Visitor Wall
+        run: python generate.py
+      
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "Update Visitor Wall"
+          git push
