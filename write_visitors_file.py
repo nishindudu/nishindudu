@@ -7,8 +7,11 @@ user = os.getenv("ISSUE_USER", "")
 
 if title.startswith(prefix):
     visitor_name = user
-    with open("visitors.txt", "a") as f:
-        if visitor_name in f.read():
-            print(f"{visitor_name} already exists in visitors.txt")
+    with open("visitors.txt", "a+") as f:
+        f.seek(0)
+        for line in f:
+            if line.strip() == visitor_name:
+                print(f"{visitor_name} is already in the visitors list.")
+                break
         else:
             f.write(visitor_name + "\n")
