@@ -1,14 +1,14 @@
 # Hi! 👋 I'm Nishin
 
-💻 Computer Science Engineering Student
+💻 Computer Science Engineering Student 🎓
 
 ---
 
-## About Me
+## About Me ✨
 
-- Pursuing B.Tech in Computer Science Engineering
-- Passionate about coding, problem-solving, and technology
-- Exploring web development, cybersecurity, and open-source projects
+- 🎓 Pursuing B.Tech in Computer Science Engineering
+- 💡 Passionate about coding, problem-solving, and technology
+- 🔍 Exploring web development, cybersecurity, and open-source projects
 
 ## Tech Stack
 **Languages and Tools**
@@ -25,14 +25,19 @@
 </p>
 
 
-## Featured Projects
+## Featured Projects 🚀
 
 | Project Name | Description | Tech Stack |
 |--------------|-------------|------------|
-| [Drawiii](https://github.com/nishindudu/drawiii) | A collaborative drawing web app | Next.js, Node.js, WebSockets |
-| [EmojiPix](https://github.com/nishindudu/Emojipix) | Convert images into emoji mosaics | HTML5, CSS3, JavaScript |
+| [Drawiii](https://github.com/nishindudu/drawiii) | A collaborative drawing web app ✏️ | Next.js, Node.js, WebSockets |
+| [EmojiPix](https://github.com/nishindudu/Emojipix) | Convert images into emoji mosaics 🖼️ | HTML5, CSS3, JavaScript |
 
-## Stats
+## Stats 📊
 
 ![nishindudu's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=nishindudu&theme=dark&show_icons=true&hide_border=true&layout=compact)
 
+## Visitors Wall 👥
+
+![Visitor Wall](profile_readme.png)
+
+[Add your name to the visitors wall!](https://github.com/nishindudu/nishindudu/issues/new?title=Visitor%20Wall--)
