@@ -1,5 +1,6 @@
 import requests
 from PIL import Image, ImageDraw, ImageFont
+import os
 
 VISITORS_FILE = 'visitors.txt'
 OUTPUT_IMAGE = 'profile_readme.png'
@@ -49,6 +50,7 @@ def generate_image(visitors):
             text_y = y_offset + (AVATAR_SIZE[1] + FONT_SIZE) / 2 + 50
             draw.text((text_x, text_y), visitor, fill=TEXT_COLOR, font=font)
             x_offset += AVATAR_SIZE[0] + FONT_SIZE * len(visitor) // 2 + AVATAR_MARGIN
+        os.remove(f'{visitor}.png')
 
     image.save(OUTPUT_IMAGE)
     print(f"Image saved as {OUTPUT_IMAGE}")
