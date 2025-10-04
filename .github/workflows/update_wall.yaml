@@ -1,5 +1,9 @@
 name : Update Visitor Wall
 
+permissions:
+  contents: write
+  issues: read
+
 on :
   issues:
     types : [ opened ]
@@ -20,11 +24,19 @@ jobs:
       
       - name: Install Dependencies
         run: |
-          python -m venv .venv
-          .venv/bin/pip install --upgrade pip
-          .venv/bin/pip install -r requirements.txt
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Write Visitor to File
+        env:
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: python write_visitors_file.py
       
       - name: Update Visitor Wall
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
         run: python generate.py
       
       - name: Commit and Push Changes
