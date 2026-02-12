@@ -32,11 +32,12 @@
 | [Drawiii](https://github.com/nishindudu/drawiii) | A collaborative drawing web app ✏️ | Next.js, Node.js, WebSockets |
 | [EmojiPix](https://github.com/nishindudu/Emojipix) | Convert images into emoji mosaics 🖼️ | HTML5, CSS3, JavaScript |
 
+<!--
 ## Stats 📊
 
 [![My Awesome Stats](https://awesome-github-stats.azurewebsites.net/user-stats/nishindudu?cardType=github&fontFamily=&preferLogin=false)](https://git.io/awesome-stats-card)
 
-<!-- ## Visitors Wall 👥
+## Visitors Wall 👥
 
 ![Visitor Wall](profile_readme.png)
 
