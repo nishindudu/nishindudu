@@ -34,10 +34,10 @@
 
 ## Stats 📊
 
-![nishindudu's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=nishindudu&theme=dark&show_icons=true&hide_border=true&layout=compact)
+[![My Awesome Stats](https://awesome-github-stats.azurewebsites.net/user-stats/nishindudu?cardType=github&fontFamily=&preferLogin=false)](https://git.io/awesome-stats-card))
 
-## Visitors Wall 👥
+<!-- ## Visitors Wall 👥
 
 ![Visitor Wall](profile_readme.png)
 
-[Add your name to the visitors wall!](https://github.com/nishindudu/nishindudu/issues/new?title=Visitor%20Wall--)
+[Add your name to the visitors wall!](https://github.com/nishindudu/nishindudu/issues/new?title=Visitor%20Wall--) -->
